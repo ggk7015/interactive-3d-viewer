@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f1ea" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%B3%3C/text%3E%3C/svg%3E" />
+    <meta name="description" content="一個能從各個角度探索的互動式 3D 展示空間。" />
+    <title>視界物所 — 3D 互動展示</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#viewer">跳至 3D 展示</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="視界物所 OBJECT / STUDIO，回到頁首">
+        <span class="brand-symbol" aria-hidden="true">✳</span>
+        <span>視界物所 <small>OBJECT / STUDIO</small></span>
+      </a>
+      <div class="header-right"><span class="header-number">DIGITAL OBJECTS &nbsp; / &nbsp; 001</span><a href="#guide">操作說明 <span aria-hidden="true">↗</span></a></div>
+    </header>
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="status-dot"></span> 一個可以自由探索的空間</p>
+          <h1 id="page-title">換個角度，<br /><em>看見更多。</em></h1>
+          <p class="intro-text">不只是觀看，而是親自探索。<br />旋轉、縮放，發現物件的每一個細節。</p>
+        </div>
+        <div class="intro-side"><span>SCROLL TO EXPLORE</span><span class="down-arrow" aria-hidden="true">↓</span></div>
+      </section>
+      <section class="gallery" id="viewer" aria-labelledby="object-title">
+        <div class="gallery-heading"><div><p class="eyebrow">THE INTERACTIVE COLLECTION &nbsp; / &nbsp; 01</p><h2 id="object-title">漂浮的<span>可能性</span></h2></div><p class="gallery-caption">一件數位雕塑，<br />一場沒有固定視角的探索。</p></div>
+        <div class="viewer-shell">
+          <div class="viewer-top"><div><span class="live-dot"></span> INTERACTIVE OBJECT</div><span>NO. 001 &nbsp; / &nbsp; ORBIT</span></div>
+          <div class="viewer-stage" id="stage" tabindex="0" role="region" aria-label="互動式 3D 模型。拖曳或使用方向鍵旋轉，使用加減鍵縮放。" aria-describedby="viewer-help">
+            <div class="stage-grid" aria-hidden="true"></div>
+            <div class="stage-cross stage-cross-a" aria-hidden="true">+</div><div class="stage-cross stage-cross-b" aria-hidden="true">+</div>
+            <div id="canvas-container" aria-hidden="true"></div>
+            <p class="viewer-message" id="viewer-message" role="status">正在準備 3D 模型…</p>
+            <div class="stage-label" aria-hidden="true"><span>OBJECT STUDY</span><strong>01 — 360°</strong></div>
+            <div class="drag-hint" id="viewer-help"><span aria-hidden="true">↔</span> 拖曳旋轉 <i></i> 滾輪縮放</div>
+          </div>
+          <div class="viewer-toolbar">
+            <div class="object-id"><span class="object-index">01</span><span><strong>ORBIT / 01</strong><small>互動式數位雕塑</small></span></div>
+            <div class="controls" aria-label="模型控制">
+              <button class="icon-button" id="rotate-left" aria-label="向左旋轉模型" title="向左旋轉">←</button>
+              <button class="icon-button" id="rotate-right" aria-label="向右旋轉模型" title="向右旋轉">→</button>
+              <button class="icon-button" id="rotate-up" aria-label="向上旋轉模型" title="向上旋轉">↑</button>
+              <button class="icon-button" id="rotate-down" aria-label="向下旋轉模型" title="向下旋轉">↓</button>
+              <span class="control-divider" aria-hidden="true"></span>
+              <button class="icon-button" id="zoom-out" aria-label="縮小模型" title="縮小">−</button>
+              <button class="icon-button" id="zoom-in" aria-label="放大模型" title="放大">＋</button>
+              <span class="control-divider" aria-hidden="true"></span>
+              <button class="text-button" id="reset">↺ <span>重設視角</span></button>
+              <button class="text-button spin-button" id="spin" aria-pressed="false">◌ <span>自動旋轉</span></button>
+            </div>
+          </div>
+        </div>
+        <div class="object-details"><div><span class="detail-label">ABOUT THE OBJECT</span><p>以軌道、球體與幾何線條組成的原創數位雕塑：中央是一顆鼠尾草綠的球體，周圍有三道交錯環繞的細環與三顆小球。試著翻轉到背面或底部，每個方向都有不同的輪廓。</p></div><div class="detail-meta"><span>MEDIUM <strong>3D / WEBGL</strong></span><span>VIEW <strong>360° FREE ROTATION</strong></span><span>EDITION <strong>001 / 001</strong></span></div></div>
+      </section>
+      <section class="guide" id="guide"><div><p class="eyebrow">A LITTLE GUIDANCE</p><h2>你的視角，<br /><em>由你決定。</em></h2></div><div class="guide-items"><div><span>01</span><h3>旋轉探索</h3><p>滑鼠或單指拖曳，往任何方向旋轉模型。使用鍵盤方向鍵也可以操作。</p></div><div><span>02</span><h3>靠近細節</h3><p>使用滑鼠滾輪、雙指縮放，或點擊模型下方的加減按鈕。</p></div><div><span>03</span><h3>回到起點</h3><p>隨時重設視角，或開啟自動旋轉，讓物件慢慢展現不同面貌。</p></div></div></section>
+    </main>
+    <footer><a class="footer-brand" href="#top">✳ &nbsp; 視界物所</a><span>MADE FOR THE CURIOUS.</span><a href="#top">回到頂部 ↑</a></footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
